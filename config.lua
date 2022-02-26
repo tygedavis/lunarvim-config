@@ -33,10 +33,16 @@ lvim.builtin.treesitter.ensure_installed = {
 }
 lvim.builtin.treesitter.ignore_install = { "haskell" }
 lvim.builtin.treesitter.highlight.enabled = true
+lvim.builtin.dap.active = true
 
 -- VIM OPTIONS
 vim.opt.shiftwidth = 4
 vim.opt.tabstop = 4
+
+-- AUTOCOMMANDS 
+lvim.autocommands.custom_groups = {
+    { "BufWinEnter", "*.json", "setlocal tabstop=2 shiftwidth=2" }
+}
 
 -- FORMATTERS
 local formatters = require "lvim.lsp.null-ls.formatters"
@@ -69,7 +75,7 @@ lvim.plugins = {
 lvim.builtin.dashboard.custom_header = {
     "                                 ",
     "                                 ",
-    " ▄▄▄▄▄▄▄ ▄▄   ▄▄ ▄▄▄▄▄▄▄ ▄▄▄▄▄▄▄ ", 
+    " ▄▄▄▄▄▄▄ ▄▄   ▄▄ ▄▄▄▄▄▄▄ ▄▄▄▄▄▄▄ ",
     "█       █  █ █  █       █       █",
     "█▄     ▄█  █▄█  █   ▄▄▄▄█    ▄▄▄█",
     "  █   █ █       █  █  ▄▄█   █▄▄▄ ",
