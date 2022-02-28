@@ -19,17 +19,11 @@ lvim.builtin.telescope.active = true
 lvim.builtin.telescope.defaults.file_ignore_patterns = { ".git", "node_modules" }
 lvim.builtin.treesitter.ensure_installed = {
   "bash",
-  "c",
   "javascript",
   "json",
   "lua",
-  "python",
-  "typescript",
-  "tsx",
   "css",
-  "rust",
-  "java",
-  "yaml",
+  "yaml"
 }
 lvim.builtin.treesitter.ignore_install = { "haskell" }
 lvim.builtin.treesitter.highlight.enabled = true
@@ -69,7 +63,7 @@ lvim.plugins = {
 lvim.builtin.dashboard.custom_header = {
     "                                 ",
     "                                 ",
-    " ▄▄▄▄▄▄▄ ▄▄   ▄▄ ▄▄▄▄▄▄▄ ▄▄▄▄▄▄▄ ", 
+    " ▄▄▄▄▄▄▄ ▄▄   ▄▄ ▄▄▄▄▄▄▄ ▄▄▄▄▄▄▄ ",
     "█       █  █ █  █       █       █",
     "█▄     ▄█  █▄█  █   ▄▄▄▄█    ▄▄▄█",
     "  █   █ █       █  █  ▄▄█   █▄▄▄ ",
