@@ -19,30 +19,18 @@ lvim.builtin.telescope.active = true
 lvim.builtin.telescope.defaults.file_ignore_patterns = { ".git", "node_modules" }
 lvim.builtin.treesitter.ensure_installed = {
   "bash",
-  "c",
   "javascript",
   "json",
   "lua",
-  "python",
-  "typescript",
-  "tsx",
   "css",
-  "rust",
-  "java",
-  "yaml",
+  "yaml"
 }
 lvim.builtin.treesitter.ignore_install = { "haskell" }
 lvim.builtin.treesitter.highlight.enabled = true
-lvim.builtin.dap.active = true
 
 -- VIM OPTIONS
 vim.opt.shiftwidth = 4
 vim.opt.tabstop = 4
-
--- AUTOCOMMANDS 
-lvim.autocommands.custom_groups = {
-    { "BufWinEnter", "*.json", "setlocal tabstop=2 shiftwidth=2" }
-}
 
 -- FORMATTERS
 local formatters = require "lvim.lsp.null-ls.formatters"
